@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_BottomSheet_ThirdParty_BottomSheet_ThirdPartyUITests : NSObject
+@end
+@implementation PodsDummy_Pods_BottomSheet_ThirdParty_BottomSheet_ThirdPartyUITests
+@end

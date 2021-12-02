@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BottomSheet_ThirdParty" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zwQ-tF-13U">
+                                <rect key="frame" x="10" y="64" width="59" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Fgo-iB-xgg"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="RuP-QZ-CGv"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="filter" title=""/>
+                                <connections>
+                                    <action selector="filterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eSA-7C-Hlh"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Filter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eh7-O5-NUz">
+                                <rect key="frame" x="79" y="64" width="38" height="45"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zwQ-tF-13U" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="W5j-5v-3Rh"/>
+                            <constraint firstItem="Eh7-O5-NUz" firstAttribute="bottom" secondItem="zwQ-tF-13U" secondAttribute="bottom" id="WSk-4Q-diU"/>
+                            <constraint firstItem="zwQ-tF-13U" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="anP-T2-9ec"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Eh7-O5-NUz" secondAttribute="trailing" symbolic="YES" id="grW-tp-Zbb"/>
+                            <constraint firstItem="Eh7-O5-NUz" firstAttribute="leading" secondItem="zwQ-tF-13U" secondAttribute="trailing" constant="10" id="mbF-aw-7gw"/>
+                            <constraint firstItem="Eh7-O5-NUz" firstAttribute="top" secondItem="zwQ-tF-13U" secondAttribute="top" id="rH6-YM-pbw"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23" y="66"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="filter" width="35" height="25"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

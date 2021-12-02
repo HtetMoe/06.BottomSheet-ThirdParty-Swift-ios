@@ -1,0 +1,6 @@
+framework module Pods_BottomSheet_ThirdParty_BottomSheet_ThirdPartyUITests {
+  umbrella header "Pods-BottomSheet-ThirdParty-BottomSheet-ThirdPartyUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
